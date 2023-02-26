@@ -10,7 +10,7 @@ from torch.utils.data.distributed import DistributedSampler
 
 import logger.logging as logging
 from core.config import cfg
-from data.transforms_img import get_data_transform
+from data.transformsImg import get_data_transform
 
 
 logger = logging.get_logger(__name__)

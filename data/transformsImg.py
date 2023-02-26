@@ -3,7 +3,7 @@ import torch
 import torchvision.transforms as transforms
 
 from core.config import cfg
-from data.auto_augment import AutoAugment
+from data.autoAugment import AutoAugment
 
 
 IMAGENET_RGB_MEAN = [0.485, 0.456, 0.406]
