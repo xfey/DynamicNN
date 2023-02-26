@@ -1,4 +1,4 @@
-# XDynamic
-A database for dynamic networks.
+# DynamicNN
 
-Not start yet.
+A dynamic network framework based on PyTorch.
+
