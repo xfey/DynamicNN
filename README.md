@@ -10,15 +10,14 @@ A dynamic network framework based on PyTorch.
 以下是计划实现的动态网络的功能。所列举的功能将陆续进行复现。
 
 #### Layer-wise（具体网络层内的功能实现）
-- [ ] Halting score：每一个网络层完成前向后，计算对应的得分
-- [ ] 自适应激活通道：实现动态结构化剪枝
+- [x] halting score：每一个网络层完成前向后，计算对应的得分
 - [ ] gate：宽度的门限结构，控制通道数量
 - [ ] 自适应卷积核形状：可形变卷积 & 多组卷积核参数加权后前向
 - [ ] 分辨率级：对不同尺寸输入图像的首层 stride 动态选择
 
 #### Module-wise（即插即用/层间插入的模块）
 - [ ] 层间分类器：为了实现 early stopping 的提前分类出口
-- [ ] gate：门限结构，用于控制某个层是否激活
+- [x] gate：门限结构，用于控制某个层是否激活/跳过
 - [ ] 参数/通道动态调节：对主网络的参数/通道重新加权，例如SENet模块
 - [ ] 基于特征的动态激活函数
 - [ ] 稀疏卷积：空间mask，及其改进的带mask的插值
@@ -34,6 +33,7 @@ A dynamic network framework based on PyTorch.
 
 #### Controller（控制网络的组件）
 - [ ] gate：门限结构控制器
+- [ ] halting score：停止分数控制器
 - [ ] policy network：策略网络，强化学习
 - [ ] MoE：多专家混合决策
 - [ ] 超网的路径选择功能
